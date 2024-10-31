@@ -1,6 +1,6 @@
+import { Home, NotFound } from '@root/pages/';
 import { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Home, NotFound } from '../pages/';
 import { routes } from './routes';
 
 export const AppRouter: FC = () => {
