@@ -1,4 +1,4 @@
-import { Home, NotFound } from '@root/pages/';
+import { HomePage, NotFoundPage } from '@root/pages/';
 import { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { routes } from './routes';
@@ -6,8 +6,8 @@ import { routes } from './routes';
 export const AppRouter: FC = () => {
     return (
         <Routes>
-            <Route path={routes.home} element={<Home />} />
-            <Route path={routes.notFound} element={<NotFound />} />
+            <Route path={routes.home} element={<HomePage />} />
+            <Route path={routes.notFound} element={<NotFoundPage />} />
         </Routes>
     );
 };

@@ -1,12 +1,14 @@
 import { Footer, Header, Main } from '@root/components';
-import { FC } from 'react';
+import { FC, Suspense } from 'react';
 import './App.css';
 
 export const App: FC = () => {
     return (
         <>
             <Header />
-            <Main />
+            <Suspense fallback={<div>Loading...</div>}>
+                <Main />
+            </Suspense>
             <Footer />
         </>
     );
