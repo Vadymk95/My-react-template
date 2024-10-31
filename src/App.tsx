@@ -1,10 +1,13 @@
 import { FC } from 'react';
 import './App.css';
+import { Footer, Header, Main } from './components';
 
 export const App: FC = () => {
     return (
-        <div>
-            <h1>Hello My React Template!</h1>
-        </div>
+        <>
+            <Header />
+            <Main />
+            <Footer />
+        </>
     );
 };
