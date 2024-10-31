@@ -4,14 +4,14 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     plugins: [react()],
-    base: '.',
+    base: './',
     build: {
         minify: 'esbuild',
-        target: 'esnext',
+        target: 'esnext'
     },
     resolve: {
         alias: {
-            '@root': path.resolve(__dirname, './src'),
-        },
-    },
+            '@root': path.resolve(__dirname, './src')
+        }
+    }
 });
